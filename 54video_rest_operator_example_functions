@@ -6,3 +6,10 @@ function fun(initial,...rest) {
     return result;
 }
 console.log(fun(1,2,3,4,5))
+
+
+/* default */
+function myf(a,b="default",c) {
+    console.log(a,b,c);
+}
+myf(1,2,3)
