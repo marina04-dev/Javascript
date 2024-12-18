@@ -23,3 +23,21 @@ for (let i=0; i<fullnames.length; i++) {
 }
 
 console.log(fullnames);
+
+function gradeStudent(student) {
+    student.grade = randomInt(0,11);
+}
+
+for (let student of fullnames) {
+    gradeStudent(student);
+    console.log("" + student);
+}
+
+function average(students) {
+    let sum=0;
+    for (let student of fullnames) {
+        sum += student.grade;
+    }
+    return sum/fullnames.length;
+}
+console.log(`The average is ${average(fullnames)}`);
