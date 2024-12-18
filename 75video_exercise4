@@ -1,0 +1,25 @@
+function Student(firstname,lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.grade = undefined;
+}
+
+Student.prototype.toString = function() {
+    return `${this.firstname} ${this.lastname} (grade: ${this.grade})`
+}
+
+let firstnames = ["Warren","Lonnie","Ferdie","Chance","Tom","Hector","Kayden","Tim","Kim","Sara"]
+
+let lastnames = ["Warren","Lonnie","Ferdie","Chance","Tom","Hector","Kayden","Tim","Kim","Sara"]
+
+
+function randomInt(min,max) {
+    return Math.floor(Math.random() * (max-min) +min);
+}
+
+let fullnames = new Array(10);
+for (let i=0; i<fullnames.length; i++) {
+    fullnames[i] = new Student(firstnames[randomInt(0, firstnames.length)],lastnames[randomInt(0,lastnames.length)])
+}
+
+console.log(fullnames);
