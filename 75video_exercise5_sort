@@ -42,9 +42,19 @@ function average(students) {
 }
 console.log(`The average is ${average(fullnames)}`);
 
+
+/*auxousa seira me sugkriti sort*/
 let comparator = function(student1,student2) { 
     return student1.grade -student2.grade;
 }
 
 fullnames.sort(comparator);
+console.log(fullnames);
+
+/*fthinousa seira me sugkriti sort*/
+let comparator1 = function(student1,student2) { 
+    return student2.grade -student1.grade;
+}
+
+fullnames.sort(comparator1);
 console.log(fullnames);
