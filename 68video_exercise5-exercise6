@@ -1,3 +1,4 @@
+/* exercise_5  */
 let billingDetails = {
     fullname: "Bob Dole",
     addressLine1: "Line 1",
@@ -10,3 +11,14 @@ let billingDetails = {
         }
     }
 }
+
+/* exercise_6  */
+let array = {};
+array[1]=11;
+array[2]=12;
+array.length = 3;
+for (let value of Object.values(array)) {
+    console.log(value);
+}
+
+array["1"]=4;
