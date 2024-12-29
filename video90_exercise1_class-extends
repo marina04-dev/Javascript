@@ -15,9 +15,8 @@ class Cow {
 
 class TexasLongHorn extends Cow {
     constructor(weight,hunger,hornLength) {
-        super(weight,hunger) {
-            this.hornLength hornLength;
-        }
+        super(weight,hunger);
+        this.hornLength = hornLength;
     }
 }
 
