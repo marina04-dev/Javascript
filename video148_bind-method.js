@@ -14,3 +14,21 @@ greetTom();
 greetBob();
 greetBob();
 
+// Apply Examples
+let object = {
+    x:1,
+    getX: function() {
+        return this.x;
+    }
+}
+
+// wrong
+let extracted = object.getX;
+//console.log(extracted()); // error
+
+// correct 
+let extracted2 = object.getX.bind(object);
+console.log(extracted2());
+
+// correct
+console.log(extracted.bind(object));
